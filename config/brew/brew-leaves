@@ -1,11 +1,12 @@
 bat
 eza
 fd
+ag
 fzf
+gsed
 gawk
 gh
 go
-go@1.22
 icdiff
 jandedobbeleer/oh-my-posh/oh-my-posh
 m-cli
@@ -18,4 +19,3 @@ tldr
 tree
 vivid
 z.lua
-ag
