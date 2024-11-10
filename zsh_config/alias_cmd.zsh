@@ -26,7 +26,8 @@ alias mi='micro'                                                                
 alias ytd='/opt/homebrew/Caskroom/miniforge/base/bin/yt-dlp'                      # yt 下載
 alias -g peco='| /opt/homebrew/bin/peco'                                          # grep強化版，可篩選輸出結果
 alias nv='nvim'                                                                   # nvim 簡稱
-alias brewi='xargs brew install < $basePath/brew/brew-leaves'                     # 批量安裝 brew 套件
+alias brewi="xargs brew install < $HOME/UserConfig/config/brew/brew-leaves"                     # 批量安裝 brew 套件
+
 
 # alias -g SaveOput=" --color=always 2>&1 | tee >(sed 's/\x1b\[[0-9;]*m//g' > /tmp/lastOput.txt)" # 自動儲存當前指令輸出
 # alias     con='conda'
