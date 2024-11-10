@@ -5,7 +5,7 @@ setopt EXTENDED_GLOB       # 啟用強化萬用字元
 
 # eval "$(zoxide init zsh)"
 # eval "$(starship init zsh)"
-eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
+# eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
 
 # bindkey 配置（放在檔尾可以避免熱鍵設定被覆蓋）
 # 下面刪除整行的熱鍵，會對自動補全造成 bug
