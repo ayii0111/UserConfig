@@ -34,6 +34,7 @@ zinit light zdharma/fast-syntax-highlighting
 zinit ice lucid wait"1"
 zinit light djui/alias-tips
 
+# zinit light jrr997/zsh-nvm-auto-use
 
 # zinit light skywind3000/z.lua
 # eval "$(lua $HOME/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
