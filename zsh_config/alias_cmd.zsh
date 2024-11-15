@@ -26,8 +26,7 @@ alias mi='micro'                                                                
 alias ytd='/opt/homebrew/Caskroom/miniforge/base/bin/yt-dlp'                      # yt 下載
 alias -g peco='| /opt/homebrew/bin/peco'                                          # grep強化版，可篩選輸出結果
 alias nv='nvim'                                                                   # nvim 簡稱
-alias brewi="xargs brew install < $HOME/UserConfig/config/brew/brew-leaves"                     # 批量安裝 brew 套件
-
+alias brewi="xargs brew install < $HOME/UserConfig/config/brew/brew-leaves"       # 批量安裝 brew 套件
 
 # alias -g SaveOput=" --color=always 2>&1 | tee >(sed 's/\x1b\[[0-9;]*m//g' > /tmp/lastOput.txt)" # 自動儲存當前指令輸出
 # alias     con='conda'
@@ -52,6 +51,7 @@ alias firr='npx firebase deploy --only firestore:rules'                         
 # npch 確認軟件有沒有安裝
 # npt 查詢套件的歷史版本與相應時間
 # npt <軟件> -n 查詢筆數，默認 10 筆
+alias npv='npm create vite@latest'
 alias npd='rm -rf node_modules package-lock.json' # 專案重新安裝的預處理
 alias npi='npm init -y'                           # 快速 npm 初始化
 alias npr='npm run'                               # npm run 的縮簡
