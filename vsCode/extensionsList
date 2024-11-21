@@ -1,5 +1,5 @@
 akamud.vscode-theme-onedark
-alefragnani.project-manager
+be5invis.vscode-custom-css
 bmalehorn.shell-syntax
 bognaum.emmet-commands-and-keybindings
 bradgashler.htmltagwrap
@@ -76,6 +76,7 @@ usernamehw.remove-empty-lines
 visbydev.folder-path-color
 vsls-contrib.gistfs
 vue.volar
+wallabyjs.console-ninja
 wayou.vscode-todo-highlight
 wmaurer.join-lines
 wware.snippet-creator

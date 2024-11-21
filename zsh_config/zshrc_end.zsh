@@ -47,4 +47,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 # 在登入載入 .zshrc 時，先執行一次 nvm 自動載入專案 node 版本
-loadNvmrc >/dev/null 2>&1
+zsh-defer -2 _loadNvmrc

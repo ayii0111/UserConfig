@@ -1,12 +1,10 @@
 bat
 eza
 fd
-ag
-fzf
-gsed
 gawk
 gh
 go
+go@1.22
 icdiff
 jandedobbeleer/oh-my-posh/oh-my-posh
 m-cli
@@ -15,10 +13,9 @@ neovim
 nnn
 rm-improved
 rust
+the_silver_searcher
 tldr
 tree
+ugit
 vivid
-easydict
-keepingyouawake
-raycast
-font-meslo-lg-nerd-font
+z.lua
