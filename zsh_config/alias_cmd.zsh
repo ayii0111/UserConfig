@@ -51,9 +51,10 @@ alias firr='npx firebase deploy --only firestore:rules'                         
 # npch 確認軟件有沒有安裝
 # npt 查詢套件的歷史版本與相應時間
 # npt <軟件> -n 查詢筆數，默認 10 筆
-alias npv='npm create vite@latest'
-alias npd='rm -rf node_modules package-lock.json' # 專案重新安裝的預處理
-alias npi='npm init -y'                           # 快速 npm 初始化
-alias npr='npm run'                               # npm run 的縮簡
-alias npc='npm create'                            # npm create 的縮簡
-alias pn='pnpm'                                   # pnpm 的縮簡
+alias npc='npx rimraf vite.config.ts.timestamp-*.mjs' # 刪除奇怪的 vite 設定的 js 檔
+alias npv='npm create vite@latest'                    # 快速建立 vite 專案，來作 demo 專案
+alias npd='rm -rf node_modules package-lock.json'     # 專案重新安裝的預處理
+alias npi='npm init -y'                               # 快速 npm 初始化
+alias npr='npm run'                                   # npm run 的縮簡
+# alias npc='npm create'                            # npm create 的縮簡
+alias pn='pnpm' # pnpm 的縮簡

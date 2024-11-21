@@ -1,15 +1,15 @@
 # default.custom.yaml
-# save it to: 
+# save it to:
 #   ~/.config/ibus/rime  (linux)
 #   ~/Library/Rime       (macos)
 #   %APPDATA%\Rime       (windows)
 
 patch:
   schema_list:
-######## 洋蔥注音 純注音 版 ########
+    ######## 洋蔥注音 純注音 版 ########
     - schema: bopomo_onion
     - schema: cangjie5
-##############################
+  ##############################
 
   switcher/fix_schema_list_order: true #固定方案選單順序
   switcher/hotkeys:
@@ -53,7 +53,11 @@ patch:
     - { when: always, accept: Control+Shift+numbersign, toggle: full_shape }
     - { when: always, accept: Control+Shift+dollar, toggle: ascii_punct }
     - { when: always, accept: Control+Shift+percent, toggle: simplification }
-    - { when: always, accept: Control+Shift+asciicircum, toggle: extended_charset }
+    - {
+        when: always,
+        accept: Control+Shift+asciicircum,
+        toggle: extended_charset,
+      }
     # 新增下排功能快捷鍵
     - { when: always, accept: Shift+space, toggle: ascii_mode }
     # - { when: always, accept: Control+comma, toggle: ascii_mode }
@@ -68,13 +72,25 @@ patch:
     # 初始樣態(Mac)
     - { accept: Control+Shift+comma, unset_option: ascii_mode, when: always }
     - { accept: Control+Shift+period, unset_option: full_shape, when: always }
-    - { accept: Control+Shift+semicolon, unset_option: simplification, when: always }
+    - {
+        accept: Control+Shift+semicolon,
+        unset_option: simplification,
+        when: always,
+      }
     - { accept: Control+Shift+slash, unset_option: ascii_punct, when: always }
     # 初始樣態(Win)
     - { accept: Control+Shift+less, unset_option: ascii_mode, when: always }
     - { accept: Control+Shift+greater, unset_option: full_shape, when: always }
-    - { accept: Control+Shift+colon, unset_option: simplification, when: always }
-    - { accept: Control+Shift+question, unset_option: ascii_punct, when: always }
+    - {
+        accept: Control+Shift+colon,
+        unset_option: simplification,
+        when: always,
+      }
+    - {
+        accept: Control+Shift+question,
+        unset_option: ascii_punct,
+        when: always,
+      }
     # 只限直排專用：左右鍵翻頁（ Testing！ ）
     # - { accept: Left, send: Page_Up, when: paging } #直式選單用 #has_menu
     # - { accept: Right, send: Page_Down, when: paging } #直式選單用 #has_menu
@@ -83,9 +99,9 @@ patch:
   ascii_composer:
     good_old_caps_lock: true
     switch_key:
-      Caps_Lock: clear
+      Caps_Lock: noop
       Control_L: noop
       Control_R: noop
       Eisu_toggle: clear
-      Shift_L: noop   # 將左 Shift 設為 noop
-      Shift_R: noop   # 將右 Shift 設為 noop
+      Shift_L: noop
+      Shift_R: noop

@@ -24,8 +24,6 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 
-# zinit ice depth"1"
-# zinit light romkatv/powerlevel10k
 
 # 當前指令代碼高亮
 zinit light zdharma/fast-syntax-highlighting
@@ -35,6 +33,11 @@ zinit ice lucid wait"1"
 zinit light djui/alias-tips
 
 # zinit light jrr997/zsh-nvm-auto-use
+zinit light zpm-zsh/undollar
+zinit light romkatv/zsh-defer
+zinit light QuarticCat/zsh-smartcache
+zinit light git-girl/git-check
+zinit light none9632/zsh-sudo
 
 # zinit light skywind3000/z.lua
 # eval "$(lua $HOME/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
