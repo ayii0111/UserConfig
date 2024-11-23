@@ -1,4 +1,5 @@
 ---
-"workspace:new_tab": cmd-;
 "workspace:close_other_tabs": "cmd-'"
+"terminal:copy": cmd-c
+"workspace:new_tab": cmd-;
 "terminal:copy_outputs": shift-cmd-C
