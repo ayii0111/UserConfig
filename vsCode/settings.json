@@ -30,22 +30,23 @@
   "git.openRepositoryInParentFolders": "never", // 不會在上層目錄找 git 儲存庫
   "editor.stickyScroll.enabled": false, // 黏性滾動
   "editor.lightbulb.enabled": "off", // 關閉快速修復提示
-  "workbench.editor.openPositioning": "first", // 新檔案的開啟位置
-  // ------------------------------- 代碼補全提示 -------------------------------
-  "tabnine.experimentalAutoImports": true, // tabnine插件,自動引入模組
-  "javascript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
-  "typescript.suggest.completeFunctionCalls": true, // 自動補全函式時,一併補全括號
-  "editor.suggestSelection": "recentlyUsedByPrefix", // 會根據你最近的選擇或者是根據當前輸入的前綴和最近的選擇來排序建議
-  "editor.snippetSuggestions": "top", //將代碼提示snippet顯示在最頂端
+  "workbench.editor.openPositioning": "first", // 每次開啟新檔案時，對應的標籤會出現在標籤列的最左側
+  "semanticdiff.closeOriginalTab": true, // SemanticDiff 插件：指定切換到 SemanticDiff 時是否應關閉原始 diff 選項卡
+  // ------------------------------- 自動補全與提示 -------------------------------
+  "editor.suggestSelection": "first", // 會根據你最近的選擇或者是根據當前輸入的前綴和最近的選擇來排序建議
+  "editor.suggest.filterGraceful": false, // 關閉拼字錯誤也能匹配提示
+  "editor.suggest.snippetsPreventQuickSuggestions": true, // 可在希望使用 Tab 鍵移動到下一個佔位符時，來避免套用到 snippet
   "vue.autoInsert.dotValue": true, // vue使用 ref便數時,自動補全 .value
-  "editor.quickSuggestionsDelay": 5, // 見提彈出的延遲,默認為 10
-  "editor.inlineSuggest.suppressSuggestions": true, // 內連提示的抑制（可以避免提示過度頻繁出現）
+  "editor.snippetSuggestions": "top", //將代碼提示snippet顯示在最頂端
+  "typescript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
+  "javascript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
   // "emmet.triggerExpansionOnTab": true, // emmet 以 tab 展開
   "emmet.variables": {
     "lang": "zh-Hant-TW",
     "charset": "UTF-8"
   }, // 使用!代碼片段時,lang的設定,以及其他設定
-  "semanticdiff.closeOriginalTab": true, // SemanticDiff 插件：指定切換到 SemanticDiff 時是否應關閉原始 diff 選項卡
+  "editor.inlineSuggest.suppressSuggestions": true, // 內連提示的抑制（可以避免提示過度頻繁出現）
+  "editor.quickSuggestionsDelay": 5, // 提示彈出的延遲,默認為 10
   // ------------------------------- 終端配置 -------------------------------
   "terminal.integrated.fontFamily": "MesloLGS NF", // PowerlevelXk 系列的字體,給終端主題使用的
   "terminal.integrated.fontSize": 14, // 終端機字體大小
@@ -380,9 +381,6 @@
   "turboConsoleLog.logMessagePrefix": "💊 變數",
   "security.workspace.trust.untrustedFiles": "newWindow",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  // 為因應 Path Intellisense 插件的路徑感知功能，而關閉 vscode 內建的路徑提示功能
-  "typescript.suggest.paths": false, // 關閉默認的 typescript 引用路徑提示
-  "javascript.suggest.paths": false,
   // ------------------------------- TODO Highlight 插件 -------------------------------
   "todohighlight.exclude": [
     "**/node_modules/**",
@@ -449,11 +447,8 @@
   "cursor.chat.premiumChatAutoScrollWhenAtBottom": true,
   "cursor.diffs.useCharacterLevelDiffs": true,
   "cursor.cmdk.useThemedDiffBackground": true,
-  "codemate.preInstruction.chat": "回覆時，應使用繁體中文",
-  "codemate.preInstruction.debug": "回覆時，應使用繁體中文",
-  "codemate.preInstruction.optimize": "回覆時，應使用繁體中文",
-  "codemate.preInstruction.review": "回覆時，應使用繁體中文",
   "cursor.chat.showSuggestedFiles": true,
   "fittencode.languagePreference.displayPreference": "zh-cn",
   "fittencode.languagePreference.commentPreference": "zh-cn",
+  "workbench.activityBar.location": "top",
 }
