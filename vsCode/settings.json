@@ -17,6 +17,11 @@
   "workbench.preferredDarkColorTheme": "Ghost Shell", // 配置亮色主題
   "workbench.preferredLightColorTheme": "Solarized Light", // 配置暗色主題
   "window.autoDetectColorScheme": true, // 自動偵測白天夜晚模式
+  "extensions.ignoreRecommendations": true, // 關閉擴充套件推薦
+  // ------------------------------- ts的配置 -------------------------------
+  "typescript.suggest.autoImports": false,
+  "typescriptExplorer.errorMessages.showDialogue": true,
+  "vue.server.hybridMode": true,
   // ------------------------------- 編輯器的配置 -------------------------------
   "workbench.editor.focusRecentEditorAfterClose": false, // 關閉編輯器標籤時,會聚焦於上一個使用的標籤
   "workbench.editor.tabSizing": "shrink", // 編輯器標籤會隨著空間不夠而縮小
@@ -38,8 +43,8 @@
   "editor.suggest.snippetsPreventQuickSuggestions": true, // 可在希望使用 Tab 鍵移動到下一個佔位符時，來避免套用到 snippet
   "vue.autoInsert.dotValue": true, // vue使用 ref便數時,自動補全 .value
   "editor.snippetSuggestions": "top", //將代碼提示snippet顯示在最頂端
-  "typescript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
-  "javascript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
+  // "typescript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
+  // "javascript.suggest.completeFunctionCalls": true, // 補全函式時,會更多補全
   // "emmet.triggerExpansionOnTab": true, // emmet 以 tab 展開
   "emmet.variables": {
     "lang": "zh-Hant-TW",

@@ -122,5 +122,9 @@
 		"prefix": "vcShowInfo",
 		"body": "vscode.window.showInformationMessage(`$1`)",
 		"description": "description for vcShowInfo"
+	},
+	"console.clear()": {
+		"prefix": "cl",
+		"body": "console.clear()"
 	}
 }

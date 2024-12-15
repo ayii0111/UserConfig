@@ -41,6 +41,7 @@ johnpapa.vscode-peacock
 jonathan-yeung.mark-sharp
 kalimahapps.tailwind-config-viewer
 kdcro101.favorites
+kimuson.ts-type-expand
 kisstkondoros.vscode-gutter-preview
 l13rary.l13-diff
 letrieu.expand-region
@@ -53,8 +54,9 @@ mkhl.shfmt
 moalamri.inline-fold
 mohammadbaqer.better-folding
 ms-ceintl.vscode-language-pack-zh-hant
+mxsdev.typescript-explorer
+mylesmurphy.prettify-ts
 naumovs.color-highlight
-nicoespeon.abracadabra
 openai.openai-chatgpt-adhoc
 pflannery.vscode-versionlens
 pkief.material-icon-theme

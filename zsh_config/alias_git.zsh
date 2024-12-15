@@ -137,7 +137,7 @@ alias ginfo='git info --no-config'
 alias gsm='git submodule' # gsm 腳本：檢視當前倉庫中的子模組
 # gsma 腳本：當前倉庫中建立子模組目錄
 # gsma <遠端倉庫> <子模組相對路徑>：建立一個子模組，其遠端對應到指定遠端上
-# 有加入防呆，指定的遠端倉庫與當�����������������������主倉庫的一樣，會提醒修改分支
+# 有加入防呆，指定的遠端倉庫與當�����������������������������������主倉庫的一樣，會提醒修改分支
 # <遠端倉庫> 有兩種格式 <用戶/倉庫> or <倉庫位址>
 
 # gsmab 腳本：建立子模組環境，並指定分支
@@ -169,11 +169,25 @@ alias gconfg='git config --global'
 # gtd 腳本：用來快速刪除 git 測試環境
 
 # ------------------------------ git stash ------------------------------
-alias gs='git stash list'                               # 檢視當前所有儲藏
-alias gss='git stash show'                              # 比較某一儲藏與最新提交的差異
-alias gsa='git stash push -u'                           # 指定儲藏檔案
-alias gsaa='git stash -u; git stash apply'              # 添加儲藏
-alias gsaa-='git stash; git stash apply'                # 添加儲藏（但不包含未追蹤檔案）
-alias gsl='git stash; git stash drop;  git stash apply' # 載入儲藏
-alias gsd='git stash drop'                              # 刪除儲藏
-alias gsdd='git stash clear'                            # 清空所有儲藏
+
+# 別名 gs: 可以收藏兩區狀態
+# gs [註記]  收藏當前狀態，可以添加註記，無參數時無註記
+alias gsl='git stash list'                     # 檢視當前所有儲藏
+alias gsld='git reset --hard; git stash apply' # 單純載入儲藏
+alias gspop='git reset --hard; git stash pop'  # 載入儲藏，並移除收藏
+alias gsrm='git stash drop'                    # 刪除儲藏
+alias gsrma='git stash clear'                  # 清空所有儲藏
+alias gss='git stash show'                     # 比較某一儲藏與最新提交的差異
+
+# ------------------------------ git 體系 ------------------------------
+# ga gc gs 成一種體系
+# 要暫存、提交、收藏，究直接執行  ga gc gs
+# 要刪除就執行 garm、gcrm、gsrm
+# 要載入就 gald、gcld、gsld
+
+# gb、gbl、gbt、gbu、gbr 則成另一種體系
+# 要檢視，直接執行 gb、gbl、gbt、gbu、gbr
+# 要建立 gba、gblt、gbtr、gbua、gbrl
+# 解釋： gba：在本地端添加新分支，gblt：將追蹤分支合併到本地分支，gbtr：將遠端分支合併到追蹤分支，gbua：設定上游分支，gbrl：講本地分支推送到遠端
+# 不確定有無 gbua
+# 要刪除 gbld、gbtd、gbud、gbrd
